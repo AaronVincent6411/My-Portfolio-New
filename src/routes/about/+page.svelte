@@ -6,19 +6,19 @@
 </script>
 
 <Navbar />
-<section id="about" class="w-full h-full top-16 relative flex flex-col justify-center text-center text-white p-16 " in:fade={{ easing:quintIn }} out:fade={{ easing:quintIn }}>
+<section id="about" class="w-full h-full top-16 relative flex flex-col justify-center text-center text-white sm:p-16 p-8 " in:fade={{ easing:quintIn }} out:fade={{ easing:quintIn }}>
     <h2 class="font-medium about-name">About</h2>
-    <p class="about-desc mt-4 text-justify font-normal">I am Aaron P Laju, Final-year Computer Science (AI) student at Adi Shankara Institute Of Engineering and Technology, Kalady. Currently serving as the Community Lead of IEDC ASIET. I bring expertise as a former Technical Lead at Hackclub and Technical Co-Lead at Computer Society of India in my college. Proficient in React and Python. I specialize in Machine Learning. My portfolio includes impactful projects in ML and Web Development, demonstrating my versatility. I also engage in poster designing, showcasing my creative skills alongside my technical expertise. I actively participate in code debugging and competitive coding competitions which will help sharpen my problem-solving skills.</p>
-    <div class="w-40 hover:w-100 h-44 relative bg-black mt-10 hover:left-[40%] lg:left-[46%] md:left-[43%] sm:left-[40%] left-[25%] rounded-[20px] overflow-hidden transition-all duration-500 group">
-        <img src={aboutprofile} alt="about-profile" class="w-32 h-32 object-center object-cover rounded-full transition-all duration-500 delay-500 transform absolute top-7 left-4">
-        <div class="flex flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-0 ml-20">
+    <p class="about-desc mt-4 text-justify font-normal ">I am Aaron P Laju, Final-year Computer Science (AI) student at Adi Shankara Institute Of Engineering and Technology, Kalady. Currently serving as the Community Lead of IEDC ASIET. I bring expertise as a former Technical Lead at Hackclub and Technical Co-Lead at Computer Society of India in my college. Proficient in React and Python. I specialize in Machine Learning. My portfolio includes impactful projects in ML and Web Development, demonstrating my versatility. I also engage in poster designing, showcasing my creative skills alongside my technical expertise. I actively participate in code debugging and competitive coding competitions which will help sharpen my problem-solving skills.</p>
+    <div class="sm:w-40 w-32 hover:sm:w-101 hover:w-60 sm:h-44 h-40 hover:sm:h-44 hover:h-60 relative bg-black mt-10 hover:xl:left-[40%] hover:lg:left-[30%] hover:md:left-[20%] hover:sm:left-[10%] hover:left-[12%] lg:left-[44.8%] md:left-[42%] sm:left-[40%] left-[25%] rounded-[20px] overflow-hidden transition-all duration-500 group">
+        <img src={aboutprofile} alt="about-profile" class="sm:w-32 sm:h-32 h-20 w-20 object-center object-cover rounded-full transition-all duration-500 delay-500 transform absolute sm:top-7 sm:left-4 top-10 left-6 hover:sm:top-7 hover:sm:left-4 hover:top-2 hover:left-10">
+        <div class="flex flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-0 sm:top-0 top-1/2 sm:ml-20 ml-16">
         <div class="flex flex-row gap-10 relative left-1/3">
             <h1>Age</h1>
-            <h1>21</h1>
+            <h1 class="ml-4">21</h1>
         </div>
         <div class="flex flex-row gap-10 relative left-1/3">
             <h1>Role</h1>
-            <h1>Developer</h1>
+            <h1 class="ml-2">Developer</h1>
         </div>
         <div class="flex flex-row gap-10 relative left-1/3">
             <h1>Place</h1>
@@ -42,5 +42,22 @@
     h1 {
         font-family: 'Gurajada', sans-serif;
         font-size: 40px;
+    }
+
+    @media screen and (max-width: 640px) {
+        .about-desc {
+            font-size: 24px;
+        }
+
+        .about-name {
+            font-size: 44px;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        /* h1 {
+            font-size: 16px;
+        } */
+
     }
 </style>
