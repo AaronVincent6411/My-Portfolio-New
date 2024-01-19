@@ -65,7 +65,9 @@
                     </svg>
                 </div>
                 <div class="projects-line">
-                    <h1 class="relative left-[8.8rem] top-16 projects-h1">Projects</h1>
+                    <a href="/projects">
+                        <h1 class="relative left-[8.8rem] top-16 projects-h1">Projects</h1>
+                    </a>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 347 37" fill="none">
                         <path d="M346.5 36.5H79.5L0.5 1" stroke="white"/>
                     </svg>
