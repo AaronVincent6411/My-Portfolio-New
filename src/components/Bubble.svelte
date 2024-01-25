@@ -5,31 +5,49 @@
     const size = Math.random() * (50 - 10) + 10;
   </script>
   
-  <div class="bubble" style="left: {x}px; top: {y}px; width: {size}px; height: {size}px;"></div>
+  <div class="bubble bubble-1" style="left: {x}px; top: {y}px; width: {size}px; height: {size}px;"></div>
+  <div class="bubble bubble-2" style="left: {x}px; top: {y}px; width: {size}px; height: {size}px;"></div>
   
   <style>
     .bubble {
-      position: fixed;
+      background-color: rgba(255, 255, 255, 0.4);
+      display: inline-block;
+      width: 40px;
+      height: 40px;
       border-radius: 50%;
-      /* background-color: #3498db; */
-      background-color: rgba(217, 217, 217, 0.30);
-      animation: bubbleAnimation 4s infinite;
-      z-index: -1;
+      position: fixed;
+      opacity: 10%;
     }
-  
-    @keyframes bubbleAnimation {
+
+    @keyframes move-bubble-1 {
       0%, 100% {
-        transform: translateY(0) translateX(0);
-      }
-      25% {
-        transform: translateY(-10px) translateX(10px);
+        transform: translate(0, 0);
       }
       50% {
-        transform: translateY(0) translateX(10px);
-      }
-      75% {
-        transform: translateY(10px) translateX(10px);
+        transform: translate(-100px, 100px);
       }
     }
-  </style>
+
+    @keyframes move-bubble-2 {
+      0%, 100% {
+        transform: translate(80, 80);
+      }
+      50% {
+        transform: translate(180px, -180px);
+      }
+    }
+
+    .bubble-1 {
+      left: 100px;
+      top: 100px;
+      animation: move-bubble-1 5s infinite;
+    }
+
+    .bubble-2 {
+      left: -100px;
+      top: -100px;
+      animation: move-bubble-2 5s infinite;
+    }
+
+</style>
   
