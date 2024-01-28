@@ -21,7 +21,7 @@ export const projectsdata = [
     },
     {
         name:"Aswamedha 2023",
-        url:"https://live.staticflickr.com/65535/53474996874_00bd7c3d48_k.jpg",
+        url:"https://live.staticflickr.com/65535/53474996874_e3ac660cef_o.png",
         github:"https://github.com/AaronVincent6411/Ashwamedha23",
     },
     {
