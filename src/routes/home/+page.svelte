@@ -209,6 +209,7 @@
     .certifications-line h1 {
         background: linear-gradient(to right, #4d4d4d 0, white 10%, #4d4d4d 20%);
         background-position: 0px;
+        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         text-decoration: none;
