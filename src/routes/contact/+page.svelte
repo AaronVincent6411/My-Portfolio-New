@@ -69,7 +69,7 @@
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm(import.meta.env.VITE_YOUR_SERVICE_ID, import.meta.env.VITE_YOUR_TEMPLATE_ID, e.target, import.meta.env.VITE_YOUR_API_KEY)
+    emailjs.sendForm(import.meta.env.VITE_YOUR_SERVICE_ID, import.meta.env.VITE_YOUR_TEMPLATE_ID, formRef, import.meta.env.VITE_YOUR_API_KEY)
       .then((result) => {
         console.log(result.text);
         formRef.reset();
